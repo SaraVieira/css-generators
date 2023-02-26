@@ -2,7 +2,7 @@
   <div class="mb-12">
     <div class="w-[1280px] max-w-[90%] mx-auto my-8">
       <Logo />
-      <span class="font-bold text-lg ,mb-4">Filter by category:</span>
+      <span class="font-bold text-lg mb-4">Filter by category:</span>
       <div class="flex gap-x-4 flex-wrap">
         <div class="form-control" v-for="cat in categories">
           <label class="label cursor-pointer">

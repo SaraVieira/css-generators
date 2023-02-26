@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <div
-    class="card hover:scale-105 hover:-rotate-1 hover:z-10 transition w-96 bg-base-100 shadow-xl hover:shadow-2xl image-full h-72 relative"
+    class="card hover:scale-105 hover:-rotate-1 hover:z-10 transition sm:w-96 w-full bg-base-100 shadow-xl hover:shadow-2xl image-full h-72 relative"
     v-for="generator in generators"
     target="_blank"
   >

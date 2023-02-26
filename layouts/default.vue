@@ -3,7 +3,7 @@
     <SEO />
     <slot />
     <footer class="footer items-center p-4 bg-neutral text-neutral-content">
-      <div class="items-center grid-flow-col">
+      <div class="items-center grid-flow-col hidden sm:block">
         <Logo class="w-32" />
       </div>
       <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
