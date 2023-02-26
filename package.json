@@ -19,5 +19,6 @@
     "@types/open-graph": "^0.2.2",
     "daisyui": "^2.51.1",
     "open-graph": "^0.2.6"
-  }
+  },
+  "license": "MIT"
 }

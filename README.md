@@ -1,42 +1,17 @@
-# Nuxt 3 Minimal Starter
+# CSS Generators
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+A list of CSS generators to making cool shit with CSS easier.
 
-## Setup
+## Adding a generator
 
-Make sure to install the dependencies:
+To add a generator please edit the file [`utils/generators.ts`](https://github.com/SaraVieira/css-generators/blob/main/utils/generators.ts) with the url of the generator and also the category it belongs to.
+
+## Running Locally
+
+This website is made with Nuxt so to start please run:
 
 ```bash
-# yarn
 yarn install
 
-# npm
-npm install
-
-# pnpm
-pnpm install
+yarn dev
 ```
-
-## Development Server
-
-Start the development server on http://localhost:3000
-
-```bash
-npm run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-npm run build
-```
-
-Locally preview production build:
-
-```bash
-npm run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
