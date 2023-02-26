@@ -8,13 +8,11 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/image-edge": "^1.0.0-27954023.4cee565",
     "@nuxtjs/tailwindcss": "^6.4.1",
     "@tailwindcss/typography": "^0.5.9",
     "nuxt": "^3.2.2"
   },
   "dependencies": {
-    "@nuxtjs/color-mode": "^3.2.0",
     "@tailwindcss/line-clamp": "^0.4.2",
     "@types/open-graph": "^0.2.2",
     "daisyui": "^2.51.1",
