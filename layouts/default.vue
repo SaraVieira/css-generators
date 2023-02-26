@@ -2,11 +2,11 @@
   <div>
     <SEO />
     <slot />
-    <footer class="footer items-center p-4 bg-neutral text-neutral-content">
-      <div class="items-center grid-flow-col hidden sm:block">
-        <Logo class="w-32" />
+    <footer class="flex justify-between items-center p-4 bg-neutral text-neutral-content">
+      <div class="items-center grid-flow-col hidden sm:block w-32">
+        <Logo />
       </div>
-      <div class="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+      <div class="flex gap-4 md:place-self-center md:justify-self-end">
         <a href="https://twitter.com/NikkitaFTW" target="_blank"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
