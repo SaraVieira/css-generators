@@ -7,7 +7,7 @@
         <Logo />
       </div>
       <div class="flex gap-4 md:place-self-center md:justify-self-end">
-        <a href="https://twitter.com/NikkitaFTW" target="_blank"
+        <a href="https://twitter.com/NikkitaFTW" target="_blank" rel="noopener noreferrer"
           ><svg
             xmlns="http://www.w3.org/2000/svg"
             width="24"
@@ -20,7 +20,7 @@
             ></path>
           </svg>
         </a>
-        <a href="https://github.com/SaraVieira/css-generators" target="_blank"
+        <a href="https://github.com/SaraVieira/css-generators" target="_blank" rel="noopener noreferrer"
           ><svg
             role="img"
             class="w-6 fill-current"

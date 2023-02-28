@@ -25,7 +25,6 @@
         class="card hover:scale-105 hover:-rotate-1 hover:z-10 transition sm:w-96 w-full bg-base-100 shadow-xl hover:shadow-2xl image-full h-72 relative"
         v-if="data.length"
         v-for="generator in data"
-        target="_blank"
       >
         <Generator :key="generator.url" :generator="generator" />
       </div>
@@ -35,7 +34,7 @@
 
 <script setup>
 const data = useState("data", () => []);
-const checkedCats = ref([]);
+const checkedCats = useState("cats", () => []);
 const categories = Object.keys(CATEGORIES);
 const g = computed(() =>shuffle(generators) )
 
