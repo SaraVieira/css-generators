@@ -21,32 +21,34 @@
     <div
       class="w-[1280px] max-w-[90%] grid sm:grid-cols-2 lg:grid-cols-3 gap-8 mx-auto"
     >
-      <Generator :generators="filtered" />
+      <div
+        class="card hover:scale-105 hover:-rotate-1 hover:z-10 transition sm:w-96 w-full bg-base-100 shadow-xl hover:shadow-2xl image-full h-72 relative"
+        v-if="data.length"
+        v-for="generator in data"
+        target="_blank"
+      >
+        <Generator :key="generator.url" :generator="generator" />
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-import { CATEGORIES } from "../utils/generators";
-
+const data = useState("data", () => []);
 const checkedCats = ref([]);
-const filtered = ref([]);
 const categories = Object.keys(CATEGORIES);
-const data = await Promise.all(
-  generators.map((g) => ({
-    url: g.url,
-    ...useLazyFetch(`/api/og?url=${g.url}`).data.value,
-    categories: g.categories,
-  }))
-);
-nextTick();
-filtered.value = data;
+const g = computed(() =>shuffle(generators) )
+
+data.value = g.value.map((g) => ({
+  url: g.url,
+  categories: g.categories,
+}));
 
 watch(checkedCats, async (cats) => {
   if (!cats.length) {
-    filtered.value = data;
+    data.value = g.value;
   } else {
-    filtered.value = data.filter((cat) =>
+    data.value = g.value.filter((cat) =>
       cats.some((a) => cat.categories.includes(a))
     );
   }
