@@ -85,7 +85,7 @@ export const generators = [
   { url: "https://easings.co/", categories: [CATEGORIES.animations] },
   { url: "https://easings.net/", categories: [CATEGORIES.animations] },
   {
-    url: "https://easyeasings.com/",
+    url: "https://easyeasings.mauri.app/",
     categories: [CATEGORIES.animations],
   },
   { url: "https://keyframes.app/animate", categories: [CATEGORIES.animations] },
