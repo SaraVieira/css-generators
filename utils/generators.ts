@@ -253,6 +253,7 @@ export const generators = [
     categories: [CATEGORIES.typography],
   },
   { url: "https://css2js.dotenv.dev/", categories: [CATEGORIES.other] },
+  { url: "https://squirclegenerator.com/", categories: [CATEGORIES.shapes] },
   { url: "", categories: [] },
   { url: "", categories: [] },
   { url: "", categories: [] },
