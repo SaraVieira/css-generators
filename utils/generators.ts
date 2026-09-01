@@ -255,6 +255,7 @@ export const generators = [
   { url: "https://css2js.dotenv.dev/", categories: [CATEGORIES.other] },
   { url: "https://squirclegenerator.com/", categories: [CATEGORIES.shapes] },
   { url: "https://nutilz.com/box-shadow", categories: [CATEGORIES.shadows] },
+  { url: "https://nutilz.com/css-text-shadow", categories: [CATEGORIES.shadows] },
   { url: "", categories: [] },
   { url: "", categories: [] },
   { url: "", categories: [] },
